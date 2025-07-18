@@ -7,6 +7,7 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 const { default: mongoose } = require('mongoose');
 const multer = require('multer');
 const DB_PATH = process.env.MONGODB_URI;
+const bodyParser = require('body-parser');
 
 
 const storeRouter = require("./routes/storeRouter")
@@ -55,7 +56,7 @@ const multerOptions = {
   storage, fileFilter
 };
 
-app.use(express.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(multer(multerOptions).single('photo'));
 app.use(express.static(path.join(rootDir, 'public')))
 app.use("/uploads", express.static(path.join(rootDir, 'uploads')))
