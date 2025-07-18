@@ -1,0 +1,28 @@
+<%- include('../partials/head') %>
+  </head>
+  <body>
+    <%- include('../partials/nav') %>
+    <main class="container mx-auto mt-20 text-center">
+      <h2 class="text-6xl font-bold text-red-500 mb-4">My Bookings</h2>
+      <% if (bookings && bookings.length > 0) { %>
+        <div class="flex flex-wrap justify-center gap-6 mt-8">
+          <% bookings.forEach(booking => { %>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 w-full max-w-sm">
+              <img src="<%= booking.home.photo %>" alt="<%= booking.home.houseName %>" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2"><%= booking.home.houseName %></h3>
+                <p class="text-gray-600 mb-2"><i class="fas fa-map-marker-alt mr-2"></i><%= booking.home.location %></p>
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-lg font-bold text-red-500">₹<%= booking.home.price %> / night</span>
+                  <span class="text-gray-700">Booked on <%= booking.createdAt.toLocaleDateString() %></span>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      <% } else { %>
+        <p class="text-2xl text-gray-700 mb-8">No bookings yet.</p>
+      <% } %>
+    </main>
+  </body>
+</html>
