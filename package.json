@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.4.20",
     "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.3",
     "connect-mongodb-session": "^5.0.0",
@@ -26,12 +25,13 @@
     "mongodb": "^6.10.0",
     "mongoose": "^8.12.1",
     "multer": "^1.4.5-lts.2",
-    "mysql2": "^3.11.4",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13"
+    "mysql2": "^3.11.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   },
   "engines": {
     "node": "18.x"
