@@ -4,11 +4,11 @@
   "description": "Airbnb-style Node.js full-stack app with MongoDB, TailwindCSS, and EJS",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",                       
-    "dev": "nodemon app.js",                         
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "tailwind:build": "tailwindcss -i ./views/input.css -o ./public/output.css",
     "tailwind:watch": "tailwindcss -i ./views/input.css -o ./public/output.css --watch",
-    "build": "npm run tailwind:build"        
+    "build": "npm run tailwind:build"
   },
   "keywords": [],
   "author": "",
@@ -32,5 +32,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
