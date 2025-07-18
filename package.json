@@ -4,10 +4,11 @@
   "description": "Airbnb-style Node.js full-stack app with MongoDB, TailwindCSS, and EJS",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "build": "npx tailwindcss -i ./views/input.css -o ./public/output.css"
+  "start": "node app.js",
+  "dev": "nodemon app.js",
+  "build": "tailwindcss -i ./views/input.css -o ./public/output.css"
   },
+  
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "bcryptjs": "^3.0.2",
