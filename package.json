@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "tailwind:build": "tailwindcss -i ./views/input.css -o ./public/output.css",
-    "tailwind:watch": "tailwindcss -i ./views/input.css -o ./public/output.css --watch",
-    "build": "npm run tailwind:build"
+    "postinstall": "tailwindcss -i ./views/input.css -o ./public/output.css"
   },
   "keywords": [],
   "author": "",
