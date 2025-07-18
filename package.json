@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "postinstall": "tailwindcss -i ./views/input.css -o ./public/output.css"
+    "postinstall": "tailwindcss -i ./views/input.css -o ./public/output.css",
+    "build": "npm run postinstall"
   },
   "keywords": [],
   "author": "",
