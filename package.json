@@ -8,9 +8,6 @@
     "dev": "nodemon app.js",
     "build": "npx tailwindcss -i ./views/input.css -o ./public/output.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "bcryptjs": "^3.0.2",
@@ -25,11 +22,11 @@
     "mongoose": "^8.12.1",
     "multer": "^1.4.5-lts.2",
     "mysql2": "^3.11.4",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
+    "postcss": "^8.5.6"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "tailwindcss": "^4.1.11"
   },
   "engines": {
     "node": "18.x"
