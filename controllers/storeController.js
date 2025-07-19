@@ -74,6 +74,9 @@ exports.postRemoveFromFavourite = async (req, res, next) => {
 };
 
 exports.postBookHome = async (req, res, next) => {
+  if (!req.session.user) {
+    return res.redirect('/login');
+  }
   const homeId = req.body.homeId;
   const userId = req.session.user._id;
   const home = await Home.findById(homeId);
