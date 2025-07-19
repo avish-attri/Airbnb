@@ -41,15 +41,25 @@ A full-stack web application inspired by Airbnb, allowing users to explore listi
 
 ## 📸 Screenshots
 ### 🏠 Home Page
-![Home Page](./Screenshots/Screenshot-1.png)
-
-### ❓ Question Feed
-![Question Feed](./Screenshots/Screenshot-2.png)
-
-### 📝 View My Questions
-![View My Questions](./Screenshots/Screenshot-3.png)
+![Home Page](./Screenshots/home.png)
 
 ### 💬 Login/Signup Page
-![Login/Signup Page](./Screenshots/Screenshot-4.png)
+![Login/Signup Page](./Screenshots/signin.png)
+
+### 🏘️ Host Homes
+![Host Homes](./Screenshots/hostHomes.png)
+
+### 🏡 Host Register Home
+![Host Register Home](./Screenshots/registerHome.png)
+
+### 🏠 Home Details
+![Home Details](./Screenshots/homeDetails.png)
+
+### ❤️ User's Favourites
+![User's Favourites](./Screenshots/favourites.png)
+
+### 📅 User's Bookings
+![User's Bookings](./Screenshots/bookings.png)
+
 
 
